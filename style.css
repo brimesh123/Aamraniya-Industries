@@ -1506,8 +1506,7 @@ html {
 
 /* Focus styles for accessibility */
 .product-card2:focus {
-  outline: 3px solid #e74c3c;
-  outline-offset: 3px;
+ 
 }
 
 /* High contrast mode support */
