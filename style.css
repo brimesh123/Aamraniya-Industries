@@ -797,8 +797,7 @@ a, button, .product-card, .card {
 
 /* Focus styles for accessibility */
 input:focus, textarea:focus, button:focus, a:focus {
-  outline: 2px solid #e74c3c;
-  outline-offset: 2px;
+  
 }
 
 /* Smooth scrolling enhancement */
