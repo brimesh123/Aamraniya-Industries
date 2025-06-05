@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aamraniya-Industries</title>
-    
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,300;1,400;1,500&display=swap"
-        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,300;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
+
     <!-- <div class="products-main">
         <div class="p-card">
             
@@ -28,6 +28,7 @@
                 <div class="cname">
                     <span>Aamraniya </span>
                     <span>Industries</span>
+                    <span>Since 1980</span>
                 </div>
             </div>
             <nav>
@@ -64,11 +65,12 @@
             <ul>
                 <li><a href="index.html#Home">Home</a></li>
                 <li><a href="product.php">Products</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="index,html#contact">Contact us</a></li>
             </ul>
         </nav>
     </div>
-<!-- <div class="hero-p">
+    <!-- <div class="hero-p">
     <div>
     <img src="Images/hero2.jpeg" alt="Screw Head and Drive Types"></div>
     <div class="hero-text">
@@ -88,233 +90,136 @@
     </div>
     
 </div> -->
-<div class="hero-p">
-    <div>
-        <img src="Images/hero2.jpeg" alt="Screw Head and Drive Types">
+    <div class="hero-p">
+        <div>
+            <img src="Images/hero2.jpeg" alt="Screw Head and Drive Types">
+        </div>
+
+        <div class="hero-text-card">
+            <h1>Screw Head Types</h1>
+            <p>The top two rows illustrate various head profiles, each designed for specific applications:</p>
+            <p><b>Flat, Binding, Oval:</b> Used for countersunk or flush finishes.</p>
+            <p><b>Truss, Brazier, Pan (JIS/ANSI):</b> Designed for wide bearing surfaces.</p>
+            <p><b>Round, Button, PF, Cheese:</b> Provide a clean appearance and moderate strength.</p>
+            <p><b>Fillister, Pan Washer, Indented Hexagon Washer:</b> Offer strong holding power and better torque distribution.</p>
+
+        </div>
     </div>
-
-    <div class="hero-text-card">
-        <h1>Screw Head Types</h1>
-        <p>The top two rows illustrate various head profiles, each designed for specific applications:</p>
-        <p><b>Flat, Binding, Oval:</b> Used for countersunk or flush finishes.</p>
-        <p><b>Truss, Brazier, Pan (JIS/ANSI):</b> Designed for wide bearing surfaces.</p>
-        <p><b>Round, Button, PF, Cheese:</b> Provide a clean appearance and moderate strength.</p>
-        <p><b>Fillister, Pan Washer, Indented Hexagon Washer:</b> Offer strong holding power and better torque distribution.</p>
-
-    </div>
-</div>
-
     <div class="main-product">
         <div class="products-grid2">
-            <div class="product-card2">
-                <img src="Images/1f.jpg" alt="Product 1" class="product-image1" onmouseover="this.src='Images/1b.jpg'"
-                    onmouseout="this.src='Images/1f.jpg'" />
-
+            <div class="product-card2" data-front="Images/1f.jpg" data-back="Images/1b.jpg" onclick="openPopup(this)">
+                <img src="Images/1f.jpg" alt="Product 1" class="product-image1" onmouseover="this.src='Images/1b.jpg'" onmouseout="this.src='Images/1f.jpg'" />
             </div>
-            <div class="product-card2">
-                <img src="Images/2f.jpg" alt="Product 2" class="product-image1" onmouseover="this.src='Images/2b.jpg'"
-                    onmouseout="this.src='Images/2f.jpg'" />
-
+            <div class="product-card2" data-front="Images/2f.jpg" data-back="Images/2b.jpg" onclick="openPopup(this)">
+                <img src="Images/2f.jpg" alt="Product 2" class="product-image1" onmouseover="this.src='Images/2b.jpg'" onmouseout="this.src='Images/2f.jpg'" />
             </div>
-            <div class="product-card2">
-                <img src="Images/3f.jpg" alt="Product 1" class="product-image1" onmouseover="this.src='Images/3b.jpg'"
-                    onmouseout="this.src='Images/3f.jpg'" />
-                <!-- <h2 class="product-title2">Product Name</h2> -->
-
+            <div class="product-card2" data-front="Images/3f.jpg" data-back="Images/3b.jpg" onclick="openPopup(this)">
+                <img src="Images/3f.jpg" alt="Product 3" class="product-image1" onmouseover="this.src='Images/3b.jpg'" onmouseout="this.src='Images/3f.jpg'" />
             </div>
-            <div class="product-card2">
-                <img src="Images/4f.jpg" alt="Product 2" class="product-image1" onmouseover="this.src='Images/4b.jpg'"
-                    onmouseout="this.src='Images/4f.jpg'" />
-                <!-- <h2 class="product-title2">Product Name</h2> -->
-
+            <div class="product-card2" data-front="Images/4f.jpg" data-back="Images/4b.jpg" onclick="openPopup(this)">
+                <img src="Images/4f.jpg" alt="Product 4" class="product-image1" onmouseover="this.src='Images/4b.jpg'" onmouseout="this.src='Images/4f.jpg'" />
             </div>
-        </div>
-
-
-        <div class="products-grid2">
-            <div class="product-card2">
-                <img src="Images/5f.jpg" alt="Product 1" class="product-image1" onmouseover="this.src='Images/5b.jpg'"
-                    onmouseout="this.src='Images/5f.jpg'" />
-                <!-- <h2 class="product-title2">Product Name</h2>
-                <p class="product-description2">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy teLorem Ipsum is simply
-                    dummy text of
-                </p> -->
-            </div>
-            <div class="product-card2">
-                <img src="Images/6b.jpg " alt="Product 2" class="product-image1" onmouseover="this.src='Images/6b.jpg'"
-                    onmouseout="this.src='Images/6f.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/7f.jpg " alt="Product 1" class="product-image1" onmouseover="this.src='Images/7b.jpg'"
-                    onmouseout="this.src='Images/7f.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/8f.jpg " alt="Product 2" class="product-image1" onmouseover="this.src='Images/8b.jpg'"
-                    onmouseout="this.src='Images/8f.jpg'" />
-
-            </div>
-
         </div>
 
         <div class="products-grid2">
-            <div class="product-card2">
-                <img src="Images/9f.jpg " alt="Product 1" class="product-image1" onmouseover="this.src='Images/9b.jpg'"
-                    onmouseout="this.src='Images/9f.jpg'" />
-
+            <div class="product-card2" data-front="Images/5f.jpg" data-back="Images/5b.jpg" onclick="openPopup(this)">
+                <img src="Images/5f.jpg" alt="Product 5" class="product-image1" onmouseover="this.src='Images/5b.jpg'" onmouseout="this.src='Images/5f.jpg'" />
             </div>
-            <div class="product-card2">
-                <img src="Images/10f.jpg " alt="Product 2" class="product-image1"
-                    onmouseover="this.src='Images/10b.jpg'" onmouseout="this.src='Images/10f.jpg'" />
-
+            <div class="product-card2" data-front="Images/6f.jpg" data-back="Images/6b.jpg" onclick="openPopup(this)">
+                <img src="Images/6f.jpg" alt="Product 6" class="product-image1" onmouseover="this.src='Images/6b.jpg'" onmouseout="this.src='Images/6f.jpg'" />
             </div>
-            <div class="product-card2">
-                <img src="Images/11b.jpg " alt="Product 1" class="product-image1"
-                    onmouseover="this.src='Images/11f.jpg'" onmouseout="this.src='Images/11b.jpg'" />
-
+            <div class="product-card2" data-front="Images/7f.jpg" data-back="Images/7b.jpg" onclick="openPopup(this)">
+                <img src="Images/7f.jpg" alt="Product 7" class="product-image1" onmouseover="this.src='Images/7b.jpg'" onmouseout="this.src='Images/7f.jpg'" />
             </div>
-            <div class="product-card2">
-                <img src="Images/12f.jpg " alt="Product 2" class="product-image1"
-                    onmouseover="this.src='Images/12b.jpg'" onmouseout="this.src='Images/12f.jpg'" />
-
+            <div class="product-card2" data-front="Images/8f.jpg" data-back="Images/8b.jpg" onclick="openPopup(this)">
+                <img src="Images/8f.jpg" alt="Product 8" class="product-image1" onmouseover="this.src='Images/8b.jpg'" onmouseout="this.src='Images/8f.jpg'" />
             </div>
-
-        </div>
-
-
-
-
-        <div class="products-grid2">
-            <div class="product-card2">
-                <img src="Images/13f.jpg " alt="Product 1" class="product-image1"
-                    onmouseover="this.src='Images/13b.jpg'" onmouseout="this.src='Images/13f.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/12f.jpg " alt="Product 2" class="product-image1"
-                    onmouseover="this.src='Images/12b.jpg'" onmouseout="this.src='Images/12f.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/14b.jpg " alt="Product 1" class="product-image1"
-                    onmouseover="this.src='Images/14f.jpg'" onmouseout="this.src='Images/14b.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/15f.jpg " alt="Product 2" class="product-image1"
-                    onmouseover="this.src='Images/15b.jpg'" onmouseout="this.src='Images/15f.jpg'" />
-
-            </div>
-
-        </div>
-
-
-
-
-        <div class="products-grid2">
-            <div class="product-card2">
-                <img src="Images/16f.jpg " alt="Product 1" class="product-image1"
-                    onmouseover="this.src='Images/16b.jpg'" onmouseout="this.src='Images/16f.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/17f.jpg " alt="Product 2" class="product-image1"
-                    onmouseover="this.src='Images/17b.jpg'" onmouseout="this.src='Images/17f.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/18b.jpg " alt="Product 1" class="product-image1"
-                    onmouseover="this.src='Images/18f.jpg'" onmouseout="this.src='Images/18b.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/19f.jpg " alt="Product 2" class="product-image1"
-                    onmouseover="this.src='Images/19b.jpg'" onmouseout="this.src='Images/19f.jpg'" />
-
-            </div>
-
-        </div>
-
-
-
-
-        <div class="products-grid2">
-            <div class="product-card2">
-                <img src="Images/20f.jpg " alt="Product 1" class="product-image1"
-                    onmouseover="this.src='Images/20b.jpg'" onmouseout="this.src='Images/20f.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/21f.jpg " alt="Product 2" class="product-image1"
-                    onmouseover="this.src='Images/21b.jpg'" onmouseout="this.src='Images/21f.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/22b.jpg " alt="Product 1" class="product-image1"
-                    onmouseover="this.src='Images/22f.jpg'" onmouseout="this.src='Images/22b.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/23f.jpg " alt="Product 2" class="product-image1"
-                    onmouseover="this.src='Images/23b.jpg'" onmouseout="this.src='Images/23f.jpg'" />
-=
-            </div>
-
-        </div>
-
-
-        <div class="products-grid2">
-            <div class="product-card2">
-                <img src="Images/24f.jpg " alt="Product 1" class="product-image1"
-                    onmouseover="this.src='Images/24b.jpg'" onmouseout="this.src='Images/24f.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/25f.jpg " alt="Product 2" class="product-image1"
-                    onmouseover="this.src='Images/25b.jpg'" onmouseout="this.src='Images/25f.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/26b.jpg " alt="Product 1" class="product-image1"
-                    onmouseover="this.src='Images/26f.jpg'" onmouseout="this.src='Images/26b.jpg'" />
-
-            </div>
-            <div class="product-card2">
-                <img src="Images/27f.jpg " alt="Product 2" class="product-image1"
-                    onmouseover="this.src='Images/27b.jpg'" onmouseout="this.src='Images/27f.jpg'" />
-
-            </div>
-
         </div>
 
         <div class="products-grid2">
-            <div class="product-card2">
-                <img src="Images/28f.jpg " alt="Product 1" class="product-image1"
-                    onmouseover="this.src='Images/28b.jpg'" onmouseout="this.src='Images/28f.jpg'" />
-
+            <div class="product-card2" data-front="Images/9f.jpg" data-back="Images/9b.jpg" onclick="openPopup(this)">
+                <img src="Images/9f.jpg" alt="Product 9" class="product-image1" onmouseover="this.src='Images/9b.jpg'" onmouseout="this.src='Images/9f.jpg'" />
             </div>
-            <div class="product-card2">
-                <img src="Images/29f.jpg " alt="Product 2" class="product-image1"
-                    onmouseover="this.src='Images/29b.jpg'" onmouseout="this.src='Images/29f.jpg'" />
-
+            <div class="product-card2" data-front="Images/10f.jpg" data-back="Images/10b.jpg" onclick="openPopup(this)">
+                <img src="Images/10f.jpg" alt="Product 10" class="product-image1" onmouseover="this.src='Images/10b.jpg'" onmouseout="this.src='Images/10f.jpg'" />
             </div>
-            <div class="product-card2">
-                <img src="Images/30b.jpg " alt="Product 1" class="product-image1"
-                    onmouseover="this.src='Images/30f.jpg'" onmouseout="this.src='Images/30b.jpg'" />
-
+            <div class="product-card2" data-front="Images/11f.jpg" data-back="Images/11b.jpg" onclick="openPopup(this)">
+                <img src="Images/11f.jpg" alt="Product 11" class="product-image1" onmouseover="this.src='Images/11b.jpg'" onmouseout="this.src='Images/11f.jpg'" />
             </div>
-            <div class="product-card2">
-                <img src="Images/31f.jpg " alt="Product 2" class="product-image1"
-                    onmouseover="this.src='Images/31b.jpg'" onmouseout="this.src='Images/31f.jpg'" />
-
+            <div class="product-card2" data-front="Images/12f.jpg" data-back="Images/12b.jpg" onclick="openPopup(this)">
+                <img src="Images/12f.jpg" alt="Product 12" class="product-image1" onmouseover="this.src='Images/12b.jpg'" onmouseout="this.src='Images/12f.jpg'" />
             </div>
-
         </div>
 
+        <div class="products-grid2">
+            <div class="product-card2" data-front="Images/13f.jpg" data-back="Images/13b.jpg" onclick="openPopup(this)">
+                <img src="Images/13f.jpg" alt="Product 13" class="product-image1" onmouseover="this.src='Images/13b.jpg'" onmouseout="this.src='Images/13f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/14f.jpg" data-back="Images/14b.jpg" onclick="openPopup(this)">
+                <img src="Images/14f.jpg" alt="Product 14" class="product-image1" onmouseover="this.src='Images/14b.jpg'" onmouseout="this.src='Images/14f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/15f.jpg" data-back="Images/15b.jpg" onclick="openPopup(this)">
+                <img src="Images/15f.jpg" alt="Product 15" class="product-image1" onmouseover="this.src='Images/15b.jpg'" onmouseout="this.src='Images/15f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/16f.jpg" data-back="Images/16b.jpg" onclick="openPopup(this)">
+                <img src="Images/16f.jpg" alt="Product 16" class="product-image1" onmouseover="this.src='Images/16b.jpg'" onmouseout="this.src='Images/16f.jpg'" />
+            </div>
+        </div>
+        <div class="products-grid2">
+            <div class="product-card2" data-front="Images/17f.jpg" data-back="Images/17b.jpg" onclick="openPopup(this)">
+                <img src="Images/17f.jpg" alt="Product 17" class="product-image1" onmouseover="this.src='Images/17b.jpg'" onmouseout="this.src='Images/17f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/18f.jpg" data-back="Images/18b.jpg" onclick="openPopup(this)">
+                <img src="Images/18f.jpg" alt="Product 18" class="product-image1" onmouseover="this.src='Images/18b.jpg'" onmouseout="this.src='Images/18f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/19f.jpg" data-back="Images/19b.jpg" onclick="openPopup(this)">
+                <img src="Images/19f.jpg" alt="Product 19" class="product-image1" onmouseover="this.src='Images/19b.jpg'" onmouseout="this.src='Images/19f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/20f.jpg" data-back="Images/20b.jpg" onclick="openPopup(this)">
+                <img src="Images/20f.jpg" alt="Product 20" class="product-image1" onmouseover="this.src='Images/20b.jpg'" onmouseout="this.src='Images/20f.jpg'" />
+            </div>
+        </div>
+        <div class="products-grid2">
+            <div class="product-card2" data-front="Images/21f.jpg" data-back="Images/21b.jpg" onclick="openPopup(this)">
+                <img src="Images/21f.jpg" alt="Product 21" class="product-image1" onmouseover="this.src='Images/21b.jpg'" onmouseout="this.src='Images/21f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/22f.jpg" data-back="Images/22b.jpg" onclick="openPopup(this)">
+                <img src="Images/22f.jpg" alt="Product 22" class="product-image1" onmouseover="this.src='Images/22b.jpg'" onmouseout="this.src='Images/22f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/23f.jpg" data-back="Images/23b.jpg" onclick="openPopup(this)">
+                <img src="Images/23f.jpg" alt="Product 23" class="product-image1" onmouseover="this.src='Images/23b.jpg'" onmouseout="this.src='Images/23f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/24f.jpg" data-back="Images/24b.jpg" onclick="openPopup(this)">
+                <img src="Images/24f.jpg" alt="Product 24" class="product-image1" onmouseover="this.src='Images/24b.jpg'" onmouseout="this.src='Images/24f.jpg'" />
+            </div>
+        </div>
+        <div class="products-grid2">
+            <div class="product-card2" data-front="Images/25f.jpg" data-back="Images/25b.jpg" onclick="openPopup(this)">
+                <img src="Images/25f.jpg" alt="Product 25" class="product-image1" onmouseover="this.src='Images/25b.jpg'" onmouseout="this.src='Images/25f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/26f.jpg" data-back="Images/26b.jpg" onclick="openPopup(this)">
+                <img src="Images/26f.jpg" alt="Product 26" class="product-image1" onmouseover="this.src='Images/26b.jpg'" onmouseout="this.src='Images/26f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/27f.jpg" data-back="Images/27b.jpg" onclick="openPopup(this)">
+                <img src="Images/27f.jpg" alt="Product 27" class="product-image1" onmouseover="this.src='Images/27b.jpg'" onmouseout="this.src='Images/27f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/28f.jpg" data-back="Images/28b.jpg" onclick="openPopup(this)">
+                <img src="Images/28f.jpg" alt="Product 28" class="product-image1" onmouseover="this.src='Images/28b.jpg'" onmouseout="this.src='Images/28f.jpg'" />
+            </div>
+        </div>
+        <div class="products-grid2">
+            <div class="product-card2" data-front="Images/29f.jpg" data-back="Images/29b.jpg" onclick="openPopup(this)">
+                <img src="Images/29f.jpg" alt="Product 29" class="product-image1" onmouseover="this.src='Images/29b.jpg'" onmouseout="this.src='Images/29f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/30f.jpg" data-back="Images/30b.jpg" onclick="openPopup(this)">
+                <img src="Images/30f.jpg" alt="Product 30" class="product-image1" onmouseover="this.src='Images/30b.jpg'" onmouseout="this.src='Images/30f.jpg'" />
+            </div>
+            <div class="product-card2" data-front="Images/31f.jpg" data-back="Images/31b.jpg" onclick="openPopup(this)">
+                <img src="Images/31f.jpg" alt="Product 31" class="product-image1" onmouseover="this.src='Images/31b.jpg'" onmouseout="this.src='Images/31f.jpg'" />
+            </div>
+        </div>
     </div>
+
 
     <footer>
         <div class="footer-main">
@@ -355,6 +260,25 @@
         </div>
     </footer>
 </body>
+
+<!-- Popup HTML -->
+<div id="imagePopup" class="popup-overlay" onclick="closePopup()">
+    <div class="popup-content" onclick="event.stopPropagation();">
+        <span class="popup-close" onclick="closePopup()">×</span>
+        <div class="popup-images">
+            <div class="popup-image-wrapper">
+                <img id="popupFront" src="" alt="Front View">
+                <p class="popup-label">Front View</p>
+            </div>
+            <div class="popup-image-wrapper">
+                <img id="popupBack" src="" alt="Back View">
+                <p class="popup-label">Back View</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script src="script.js"></script>
 
 </html>

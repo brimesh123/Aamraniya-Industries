@@ -49,10 +49,10 @@ window.addEventListener('scroll', () => {
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        
+
         if (target) {
             // Close mobile menu if open
             if (slider.classList.contains('active')) {
@@ -77,17 +77,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Animation on scroll
 const animateOnScroll = () => {
     const elements = document.querySelectorAll('.card, .product-card');
-    
+
     elements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
         const elementBottom = element.getBoundingClientRect().bottom;
-        
+
         if (elementTop < window.innerHeight && elementBottom > 0) {
             element.style.opacity = '1';
             element.style.transform = 'translateY(0)';
         }
     });
 };
+
+// Product Image Popup
+function openPopup(card) {
+    const front = card.getAttribute('data-front');
+    const back = card.getAttribute('data-back');
+
+    document.getElementById('popupFront').src = front;
+    document.getElementById('popupBack').src = back;
+
+    document.getElementById('imagePopup').style.display = 'flex';
+}
+
+function closePopup() {
+    document.getElementById('imagePopup').style.display = 'none';
+}
+
 
 // Initial check for elements in view
 window.addEventListener('load', animateOnScroll);
@@ -98,32 +114,32 @@ const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         // Basic form validation
         const name = contactForm.querySelector('#name').value.trim();
         const email = contactForm.querySelector('#email').value.trim();
         const mobile = contactForm.querySelector('#mobile').value.trim();
         const message = contactForm.querySelector('#message').value.trim();
-        
+
         if (!name || !email || !mobile || !message) {
             alert('Please fill in all fields');
             return;
         }
-        
+
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             alert('Please enter a valid email address');
             return;
         }
-        
+
         // Mobile validation
         const mobileRegex = /^\+?[\d\s-]{10,}$/;
         if (!mobileRegex.test(mobile)) {
             alert('Please enter a valid mobile number');
             return;
         }
-        
+
         // If validation passes, submit the form
         contactForm.submit();
     });
